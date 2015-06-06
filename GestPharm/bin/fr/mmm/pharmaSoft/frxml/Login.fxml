@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane id="backgroundLogin" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.mmm.pharmaSoft.controller.LoginController">
+   <center>
+      <AnchorPane id="backgroundLogin" blendMode="HARD_LIGHT" prefHeight="756.0" prefWidth="1053.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <effect>
+            <Blend />
+         </effect>
+         <children>
+            <Label layoutX="155.0" layoutY="94.0" prefHeight="90.0" prefWidth="833.0" text="  GESTPharm : Gestion de pharmacie" textAlignment="CENTER">
+               <font>
+                  <Font name="Cambria Bold" size="50.0" />
+               </font>
+               <effect>
+                  <Lighting diffuseConstant="1.26" specularExponent="27.91">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#3add0c" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Label>
+            <Label layoutX="181.0" layoutY="246.0" prefHeight="52.0" prefWidth="299.0" text="UTILISATEUR    :">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#3add0c" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Cambria" size="41.0" />
+               </font>
+            </Label>
+            <Label layoutX="180.0" layoutY="400.0" prefHeight="52.0" prefWidth="299.0" text="MOT DE PASSE  :">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#3add0c" />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Cambria" size="41.0" />
+               </font>
+            </Label>
+            <TextField id="utilisateurs" fx:id="t_utilisateur" layoutX="497.0" layoutY="243.0" prefHeight="62.0" prefWidth="491.0" promptText="utilisateur">
+               <effect>
+                  <Lighting light="$null">
+                     <bumpInput>
+                        <Shadow blurType="GAUSSIAN" />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Cambria" size="36.0" />
+               </font>
+            </TextField>
+            <PasswordField id="motDePasse" fx:id="t_motDePasse" layoutX="497.0" layoutY="395.0" prefHeight="62.0" prefWidth="491.0" promptText="mot de passe">
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+               <font>
+                  <Font name="Cambria" size="36.0" />
+               </font>
+            </PasswordField>
+            <Button id="annulerConnexion" fx:id="b_annuler" cancelButton="true" layoutX="181.0" layoutY="549.0" mnemonicParsing="false" prefHeight="78.0" prefWidth="296.0" text="ANNULER">
+               <font>
+                  <Font name="Cambria" size="41.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#944646" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button id="seConnecter" fx:id="b_connexion" cancelButton="true" layoutX="497.0" layoutY="549.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="496.0" text="SE CONNECTER">
+               <font>
+                  <Font name="Cambria" size="41.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant color="#288340" />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+   <stylesheets>
+      <URL value="@login.css" />
+      <URL value="@../css/login.css" />
+   </stylesheets>
+</BorderPane>

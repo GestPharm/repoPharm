@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.mmm.pharmaSoft.controller.EmployeController">
+   <center>
+      <AnchorPane id="backgroundEmploye" prefHeight="756.0" prefWidth="1053.0" stylesheets="@../css/employe.css" BorderPane.alignment="CENTER">
+         <children>
+            <Pane layoutX="173.0" layoutY="12.0" prefHeight="114.0" prefWidth="756.0">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="56.0" layoutY="14.0" text="GESTION DES EMPLOYES" underline="true">
+                     <font>
+                        <Font name="Cambria" size="55.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Separator blendMode="LIGHTEN" layoutX="60.0" layoutY="109.0" prefHeight="35.0" prefWidth="938.0" />
+            <Pane layoutX="14.0" layoutY="119.0" prefHeight="531.0" prefWidth="915.0" stylesheets="@../css/employe.css">
+               <children>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="10.0" text="NOM :">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="90.0" text="PRENOM :">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="180.0" text="DATE NAISSANCE :">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="270.0" text="ADRESSE :">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="360.0" text="TELEPHONE">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <Label contentDisplay="CENTER" layoutX="60.0" layoutY="450.0" text="RÔLE :">
+                     <font>
+                        <Font name="Cambria" size="36.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="t_nomEmploye" layoutX="356.0" layoutY="10.0" prefHeight="41.0" prefWidth="500.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="t_prenomEmploye" layoutX="356.0" layoutY="90.0" prefHeight="41.0" prefWidth="500.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker fx:id="d_naissanceEmploye" layoutX="356.0" layoutY="180.0" prefHeight="41.0" prefWidth="500.0" />
+                  <TextField fx:id="t_adresseEmploye" layoutX="356.0" layoutY="270.0" prefHeight="41.0" prefWidth="500.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="t_telephoneEmploye" layoutX="356.0" layoutY="360.0" prefHeight="41.0" prefWidth="500.0">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </TextField>
+                  <ComboBox fx:id="t_roleEmploye" layoutX="356.0" layoutY="450.0" prefHeight="41.0" prefWidth="500.0" />
+               </children>
+            </Pane>
+            <Button id="backgroundCreerEmploye" fx:id="b_enregistrerEmploye" layoutX="127.0" layoutY="665.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="379.0" stylesheets="@../css/employe.css" text="ENREGISTRER">
+               <font>
+                  <Font size="31.0" />
+               </font>
+            </Button>
+            <Button id="buttonAnnulerEnregistrement" fx:id="b_annulerEnregistrementEmploye" layoutX="575.0" layoutY="667.0" mnemonicParsing="false" prefHeight="74.0" prefWidth="294.0" stylesheets="@../css/employe.css" text="ANNULER" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

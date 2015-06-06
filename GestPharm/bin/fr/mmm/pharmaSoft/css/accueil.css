@@ -1,0 +1,49 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+#boutonVente {
+ 	-fx-background-repeat: repeat;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, repeat, rgb(230.0,230.0,230.0) 0.0, rgb(0.0,51.0,0.0) 100.0 ); 
+  	-fx-background-radius: 40.0, 20.0, 20.0, 4.0, 3.0, 5.0;
+    -fx-background-insets: -3.0 -3.0 -4.0 -3.0, -3.0, 0.0, 1.0, 2.0, 0.0;
+    -fx-text-fill: rgb(0,0,0);
+}
+
+#boutonStock {
+	-fx-background-repeat: repeat;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 500.0%, rgb(255,255,255) 0.0, rgb(77,128,77) 100.0 );
+	-fx-background-radius: 40.0, 20.0, 20.0, 4.0, 3.0, 5.0;
+    -fx-background-insets: -3.0 -3.0 -4.0 -3.0, -3.0, 0.0, 1.0, 2.0, 0.0; 
+}
+
+#boutonCompta {
+ 	-fx-background-repeat: repeat;	
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 500.0%, rgb(255,255,255) 0.0, rgb(27,128,77) 100.0 );
+	-fx-background-radius: 40.0, 20.0, 20.0, 4.0, 3.0, 5.0;
+    -fx-background-insets: -3.0 -3.0 -4.0 -3.0, -3.0, 0.0, 1.0, 2.0, 0.0; 
+}
+
+#boutonEmploye {
+	-fx-background-repeat: repeat;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, repeat, rgb(230.0,230.0,230.0) 0.0, rgb(0.0,51.0,0.0) 100.0 );
+	-fx-background-radius: 40.0, 20.0, 20.0, 4.0, 3.0, 5.0;
+    -fx-background-insets: -3.0 -3.0 -4.0 -3.0, -3.0, 0.0, 1.0, 2.0, 0.0; 
+}
+
+#backgroundAccueil {
+	-fx-background-repeat: repeat;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 250.0%, rgb(255,255,255) 0.0, rgb(0,51,0) 100.0 ) 
+  	
+}
+
+#buttonQuitterAccueil{
+	-fx-background-repeat: repeat;
+	-fx-background-color: radial-gradient( focus-angle 0.0deg, focus-distance 0.0%, center 50.0% 50.0%, radius 100.0%, rgb(255,153,153) 0.0, rgb(153,0,0) 100.0 );
+	-fx-text-fill: rgb(0,51,51);
+}
+.button {
+    -fx-background-radius: 7, 6, 5, 4, 3, 5;
+    -fx-background-insets: -3 -3 -4 -3, -3, 0, 1, 2, 0;
+	-fx-font-family: "Cambria";
+    -fx-font-size: 57;
+    -fx-font-style: oblique ;
+     -fx-padding: 10 20 10 20;
+}

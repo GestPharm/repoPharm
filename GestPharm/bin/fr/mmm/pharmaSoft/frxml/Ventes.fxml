@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="backgroundVente" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="756.0" prefWidth="1053.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.mmm.pharmaSoft.controller.VentesController">
+   <children>
+      <Label layoutX="495.0" layoutY="14.0" prefHeight="22.0" prefWidth="93.0" text="Employé : ">
+         <font>
+            <Font name="Cambria Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="t_employe" editable="false" layoutX="578.0" layoutY="8.0" opacity="0.47" prefHeight="34.0" prefWidth="475.0" visible="false">
+         <font>
+            <Font name="Cambria" size="18.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </TextField>
+      <TableView fx:id="tableMedicament" layoutX="498.0" layoutY="58.0" prefHeight="529.0" prefWidth="559.0">
+        <columns>
+          <TableColumn fx:id="tv_medicament" prefWidth="262.0" text="MEDICAMENTS" />
+          <TableColumn fx:id="tv_prixUnitaire" minWidth="0.0" prefWidth="92.0" text="PRIX UNITAIRE" />
+            <TableColumn fx:id="tv_quantite" minWidth="0.0" prefWidth="92.0" text="QUANTITE" />
+            <TableColumn fx:id="tv_montant" minWidth="0.0" prefWidth="111.0" text="MONTANT" />
+        </columns>
+      </TableView>
+      <Button id="buttonAnnuler" fx:id="b_supprimerLigneMedicament" layoutX="822.0" layoutY="591.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="228.0" stylesheets="@ventes.css" text="SUPPRIMER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Button id="buttonAccueil" fx:id="b_accueil" layoutX="286.0" layoutY="707.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="189.0" stylesheets="@ventes.css" text="ACCUEIL">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Pane layoutY="71.0" prefHeight="201.0" prefWidth="487.0">
+         <children>
+            <Label layoutX="2.0" layoutY="-13.0" text="MEDICAMENT :">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cb_medicament" editable="true" layoutX="179.0" layoutY="-13.0" prefHeight="36.0" prefWidth="313.0" />
+            <Label layoutX="2.0" layoutY="63.0" text="QUANTITE :">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t_quantite" layoutX="179.0" layoutY="60.0" prefHeight="36.0" prefWidth="104.0" />
+            <Button id="buttonAjouter" fx:id="b_ajouterMedicament" layoutX="5.0" layoutY="126.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="215.0" stylesheets="@ventes.css" text="AJOUTER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Button id="buttonAnnuler" fx:id="b_annulerAjoutMedicament" layoutX="301.0" layoutY="126.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="189.0" stylesheets="@ventes.css" text="ANNULER">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Button>
+            <Separator layoutY="110.0" prefHeight="11.0" prefWidth="493.0" />
+            <Separator layoutX="3.0" layoutY="195.0" prefHeight="11.0" prefWidth="493.0" />
+         </children>
+      </Pane>
+      <Pane layoutY="264.0" prefHeight="225.0" prefWidth="493.0">
+         <children>
+            <Separator layoutY="43.0" prefHeight="11.0" prefWidth="493.0" />
+            <Label layoutX="2.0" layoutY="9.0" text="PAIEMENT">
+               <font>
+                  <Font name="Cambria Bold" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutY="58.0" text="PRIX TOTAL:">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t_prixTotal" layoutX="245.0" layoutY="58.0" prefHeight="36.0" prefWidth="248.0" />
+            <Label layoutY="116.0" text="MONTANT ENCAISSE:">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t_montantEncaisse" layoutX="245.0" layoutY="116.0" prefHeight="36.0" prefWidth="248.0" />
+            <Label layoutY="174.0" text="RESTE DÛ:">
+               <font>
+                  <Font name="Cambria" size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="t_resteDu" layoutX="245.0" layoutY="174.0" prefHeight="36.0" prefWidth="248.0" />
+            <Separator layoutX="1.0" layoutY="211.0" prefHeight="11.0" prefWidth="493.0" />
+            <Separator layoutY="316.0" prefHeight="11.0" prefWidth="493.0" />
+            <Button id="buttonPayer" fx:id="b_payer" layoutX="89.0" layoutY="227.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="295.0" stylesheets="@ventes.css" text="PAYER" />
+         </children>
+      </Pane>
+      <Button id="buttonQuitter" fx:id="b_quitterVente" layoutX="502.0" layoutY="707.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="189.0" stylesheets="@ventes.css" text="QUITTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+      <Separator layoutX="1.0" layoutY="55.0" prefHeight="0.0" prefWidth="1053.0" />
+   </children>
+   <stylesheets>
+      <URL value="@ventes.css" />
+      <URL value="@../css/ventes.css" />
+   </stylesheets>
+</AnchorPane>
