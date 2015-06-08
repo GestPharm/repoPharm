@@ -13,6 +13,7 @@ public class LigneMedicamentDTO {
 	private IntegerProperty quantite;
 	private IntegerProperty idMedicament;
 	private DoubleProperty prixUnitaire;
+	private DoubleProperty montant;
 
 	public LigneMedicamentDTO(String libelleMedicament, Integer quantite,
 			Double prixUnitaire) {
@@ -22,6 +23,18 @@ public class LigneMedicamentDTO {
 		// this.idMedicament = idMedicament;
 		this.prixUnitaire = new SimpleDoubleProperty(prixUnitaire);
 
+	}
+
+	
+	public Double getMontant(){
+		return this.prixUnitaire.get()*this.quantite.get();
+	}
+
+	/**
+	 * @param montant the montant to set
+	 */
+	public void setMontant(DoubleProperty montant) {
+		this.montant = montant;
 	}
 
 	public String getLibelleMedicament() {
@@ -50,6 +63,20 @@ public class LigneMedicamentDTO {
 
 	public void setPrixUnitaire(DoubleProperty prixUnitaire) {
 		this.prixUnitaire = prixUnitaire;
+	}
+
+	/**
+	 * @return the idMedicament
+	 */
+	public IntegerProperty getIdMedicament() {
+		return idMedicament;
+	}
+
+	/**
+	 * @param idMedicament the idMedicament to set
+	 */
+	public void setIdMedicament(IntegerProperty idMedicament) {
+		this.idMedicament = idMedicament;
 	}
 
 }

@@ -17,6 +17,12 @@ import org.hibernate.annotations.OnDeleteAction;
 @Table(name="ligne_medicament")
 public class LigneMedicament implements Serializable {
 	
+	public LigneMedicament(Medicament medicament, Integer nombre) {
+		super();
+		this.medicament = medicament;
+		this.nombre = nombre;
+	}
+
 	/**
 	 * 
 	 */
